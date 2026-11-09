@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Professional portfolio of Lucy Mukolwe Nyongesa — educator, ICT integration trainer, STEM mentor, AI in Education learner and published researcher.">
+<title>Lucy Mukolwe Nyongesa | Educator • ICT Trainer • STEM Mentor</title>
+<style>
+:root{--ink:#17253b;--muted:#5d6b7d;--teal:#087e83;--teal2:#dff3f0;--gold:#d7a64a;--paper:#f7f9fb;--white:#fff;--line:#e3e9ef}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+a{color:inherit}.wrap{width:min(1120px,92%);margin:auto}.topbar{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:70px}.brand{font-weight:800;letter-spacing:.02em}.brand span{color:var(--teal)}nav{display:flex;gap:22px;flex-wrap:wrap}nav a{text-decoration:none;font-size:.9rem;color:var(--muted);font-weight:650}nav a:hover{color:var(--teal)}
+.hero{background:linear-gradient(120deg,#14243c 0%,#183d55 58%,#087e83 100%);color:white;padding:86px 0 78px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:420px;height:420px;border:1px solid rgba(255,255,255,.15);border-radius:50%;right:-100px;top:-170px;box-shadow:0 0 0 45px rgba(255,255,255,.035),0 0 0 95px rgba(255,255,255,.025)}
+.kicker{text-transform:uppercase;letter-spacing:.18em;font-size:.76rem;font-weight:800;color:#a9e4dc}.hero h1{font-size:clamp(2.5rem,6vw,4.8rem);line-height:1.05;max-width:820px;margin:14px 0 18px;letter-spacing:-.045em}.hero p{font-size:1.12rem;max-width:710px;color:#e0edf1;margin:0 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-block;padding:11px 18px;border-radius:8px;text-decoration:none;font-weight:750}.primary{background:#fff;color:#12334a}.outline{border:1px solid rgba(255,255,255,.55);color:white}.hero-meta{display:flex;gap:24px;flex-wrap:wrap;margin-top:35px;color:#d6e7eb;font-size:.92rem}.hero-meta span{display:flex;align-items:center;gap:8px}
+section{padding:72px 0}.section-head{max-width:720px;margin-bottom:30px}.eyebrow{color:var(--teal);text-transform:uppercase;letter-spacing:.16em;font-size:.75rem;font-weight:850}.section-head h2{font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.15;margin:8px 0 12px;letter-spacing:-.035em}.section-head p{color:var(--muted);margin:0}
+.about-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:28px}.panel,.card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:26px;box-shadow:0 8px 28px rgba(20,42,65,.035)}.panel p{color:var(--muted);margin-top:0}.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px}.fact{padding:16px;border-radius:12px;background:var(--teal2)}.fact strong{display:block;font-size:1.35rem;color:#075f63}.fact small{color:#45676a}
+.pills{display:flex;flex-wrap:wrap;gap:9px}.pill{background:#edf3f6;border:1px solid #e0e9ee;padding:7px 11px;border-radius:999px;font-size:.88rem;color:#34475c}
+.timeline{display:grid;gap:16px}.item{display:grid;grid-template-columns:210px 1fr;gap:24px;background:white;border:1px solid var(--line);border-radius:14px;padding:22px}.date{color:var(--teal);font-weight:800;font-size:.9rem}.item h3{margin:0 0 3px;font-size:1.12rem}.org{color:var(--muted);font-weight:650;margin-bottom:10px}.item ul{margin:0;padding-left:19px;color:#526174}.item li{margin:4px 0}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card h3{margin:0 0 5px}.card .sub{color:var(--teal);font-weight:750;font-size:.9rem}.card p{color:var(--muted);margin:9px 0 0}
+.achievement-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.achievement{background:var(--ink);color:white;padding:22px;border-radius:14px;min-height:150px}.achievement strong{display:block;color:#9fe1d8;font-size:1.55rem;margin-bottom:8px}.achievement p{margin:0;color:#d8e2e9;font-size:.94rem}
+.training{display:grid;grid-template-columns:1fr 1fr;gap:14px}.training .card{padding:18px}.training h3{font-size:1rem}.training p{margin:4px 0 0;font-size:.9rem}
+.contact{background:#14243c;color:white}.contact .section-head p{color:#d0dce5}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}.contact-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);padding:24px;border-radius:14px}.contact-card a{color:#a9e4dc;text-decoration:none}.contact-card p{margin:7px 0}.contact-note{color:#d0dce5}
+footer{padding:22px 0;color:#738094;font-size:.85rem;text-align:center}
+@media(max-width:760px){nav{gap:10px}nav a{font-size:.78rem}.nav{align-items:flex-start;padding:14px 0;flex-direction:column}.hero{padding:64px 0}.about-grid,.two-col,.contact-grid{grid-template-columns:1fr}.item{grid-template-columns:1fr;gap:7px}.achievement-grid{grid-template-columns:1fr}.training{grid-template-columns:1fr}.facts{grid-template-columns:1fr 1fr}section{padding:54px 0}}
+@media print{.topbar,.actions{display:none}.hero{padding:35px 0;background:#14243c!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}section{padding:32px 0}.panel,.card,.item{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="wrap nav">
+  <div class="brand">LUCY <span>MUKOLWE</span></div>
+  <nav aria-label="Main navigation">
+    <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#impact">Impact</a><a href="#media">Media & publications</a><a href="#contact">Contact</a>
+  </nav>
+</div></header>
+<main>
+<section class="hero">
+ <div class="wrap">
+  <div class="kicker">Educator · ICT Trainer · STEM Mentor</div>
+  <h1>Connecting education, technology and opportunity.</h1>
+  <p>I am Lucy Mukolwe Nyongesa, a Computer Studies and Physics educator passionate about digital learning, teacher development, practical problem-solving and expanding opportunities for girls in STEM.</p>
+  <div class="actions"><a class="btn primary" href="mailto:lucymukolwe@gmail.com">Get in touch</a><a class="btn outline" href="#experience">Explore my work</a><a class="btn outline" href="https://www.linkedin.com/in/lucy-mukolwe-ba396511a" target="_blank" rel="noopener">View LinkedIn</a></div>
+  <div class="hero-meta"><span>📍 Kitale, Kenya</span><span>✉ lucymukolwe@gmail.com</span><span>☎ +254 700 914 016</span></div>
+ </div>
+</section>
+
+<section id="about"><div class="wrap">
+ <div class="section-head"><div class="eyebrow">About me</div><h2>Education grounded in practice, powered by possibility.</h2><p>My work brings together classroom teaching, ICT integration, curriculum implementation and teacher mentorship.</p></div>
+ <div class="about-grid">
+  <div class="panel"><p>I am a proactive Physics and Computer Studies teacher with experience in secondary and tertiary education. I work to strengthen digital literacy, practical problem-solving and meaningful use of technology in teaching and learning.</p><p>Alongside classroom practice, I contribute to teacher training, curriculum implementation, assessment development and departmental leadership. I am especially interested in emerging technologies, artificial intelligence and robotics, and in promoting female participation in STEM.</p><p>I am currently pursuing a Master of Science in Computer Science at the University of Eldoret.</p></div>
+  <div class="facts">
+   <div class="fact"><strong>2018–Now</strong><small>Teaching at AIC Ngeria Girls Secondary School</small></div>
+   <div class="fact"><strong>2022–2026</strong><small>ICT integration and CBE teacher training</small></div>
+   <div class="fact"><strong>2024–2026</strong><small>Teacher mentorship through TIMEC / TSC</small></div>
+   <div class="fact"><strong>MSc</strong><small>Computer Science, ongoing</small></div>
+  </div>
+ </div>
+</div></section>
+
+<section id="expertise" style="background:#eef3f6"><div class="wrap">
+ <div class="section-head"><div class="eyebrow">Areas of expertise</div><h2>What I bring to education and technology.</h2></div>
+ <div class="pills">
+  <span class="pill">Physics instruction</span><span class="pill">Computer Studies instruction</span><span class="pill">ICT integration</span><span class="pill">Teacher training & mentorship</span><span class="pill">Curriculum design</span><span class="pill">Competency-Based Education</span><span class="pill">Assessment & test-item development</span><span class="pill">Digital literacy</span><span class="pill">STEM education</span><span class="pill">Departmental leadership</span><span class="pill">Student guidance & counselling</span><span class="pill">Emerging technologies</span>
+ </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+ <div class="section-head"><div class="eyebrow">Professional experience</div><h2>Teaching, training and leadership.</h2></div>
+ <div class="timeline">
+  <article class="item"><div class="date">November 2018 – Present</div><div><h3>Computer Studies and Physics Teacher</h3><div class="org">AIC Ngeria Girls Secondary School</div><ul><li>Teach Computer Studies and Physics.</li><li>Serve as Head of Subject for Physics and Computer Studies and Head of Department for ICT and Technical Subjects.</li><li>Contribute to the Teacher Induction, Mentorship and Coaching Committee (TIMEC) and Guidance and Counselling Department.</li><li>Serve as class teacher and Form Principal.</li></ul></div></article>
+  <article class="item"><div class="date">2017 – 2018</div><div><h3>Trainer – Diploma in Computer Science</h3><div class="org">Eldoret National Polytechnic, Eldoret</div><ul><li>Lectured in Computer Science, including computer applications and applied sciences (Physics).</li><li>Prepared students for industry through practical skills development and theoretical instruction.</li></ul></div></article>
+  <article class="item"><div class="date">2016 – 2017</div><div><h3>Teacher – Computer Studies and Physics</h3><div class="org">Ndivisi Girls High School</div><ul><li>Taught Computer Studies and Physics.</li><li>Headed the Technical Department, overseeing integration of technical subjects into the curriculum.</li></ul></div></article>
+ </div>
+</div></section>
+
+<section id="education" style="background:#eef3f6"><div class="wrap">
+ <div class="section-head"><div class="eyebrow">Education & research</div><h2>Academic foundation and ongoing research.</h2></div>
+ <div class="two-col">
+  <div class="card"><div class="sub">2023 – Ongoing</div><h3>Master of Science in Computer Science</h3><p>University of Eldoret</p><p><strong>Research:</strong> “Leveraging Homomorphic Encryption to Enhance Efficiency and Data Protection in Online Retail Based in Kenya.”</p></div>
+  <div class="card"><div class="sub">2013 – 2017</div><h3>Bachelor of Science (with Education)</h3><p>Computer Studies / Physics · University of Eldoret</p><p>Second Class Honours (Upper Division).</p></div>
+  <div class="card"><div class="sub">2008 – 2012</div><h3>Kenya Certificate of Secondary Education</h3><p>Butere Girls High School · Mean grade B (65 points).</p></div>
+  <div class="card"><div class="sub">2000 – 2008</div><h3>Kenya Certificate of Primary Education</h3><p>Mumias Complex Primary School · 393 out of 500.</p></div>
+ </div>
+</div></section>
+
+<section id="impact"><div class="wrap">
+ <div class="section-head"><div class="eyebrow">Professional contributions & recognition</div><h2>Contributing beyond the classroom.</h2><p>Selected work and recognition documented in my curriculum vitae.</p></div>
+ <div class="achievement-grid">
+  <div class="achievement"><strong>Teacher of the Year</strong><p>Recognised in Computer Studies for KCSE performance in 2022, 2024 and 2025.</p></div>
+  <div class="achievement"><strong>Teacher Mentor</strong><p>Recognised by TSC: position 1 in Uasin Gishu County and among the top five in the Rift Valley region.</p></div>
+  <div class="achievement"><strong>Girls in STEM & sport</strong><p>Trained and coached secondary school girls in lawn tennis, progressing to county-level participation.</p></div>
+ </div>
+ <div style="height:22px"></div>
+ <div class="two-col">
+  <div class="card"><h3>Trainer of Trainers | 2022–2026</h3><p>Trained junior school teachers in ICT integration under the Kenya Digital Economy Acceleration Program (KDEAP); supported CBE training, remote-learning integration and TIMEC implementation.</p></div>
+  <div class="card"><h3>Book Evaluator | KICD | 2025–2026</h3><p>Participated in evaluation of learners’ books and teachers’ guides for junior and senior school levels in ICT and Electricity.</p></div>
+  <div class="card"><h3>Test Item Development | KNEC</h3><p>Trained and participated in development of Computer Studies test items aligned with the Competency-Based Assessment Framework.</p></div>
+  <div class="card"><h3>Mentor | TIMEC / TSC | 2024–2026</h3><p>Conducted teacher mentorship across schools, student guidance and counselling, and motivational talks supporting learners facing school and home challenges.</p></div>
+ </div>
+</div></section>
+
+<section style="background:#eef3f6"><div class="wrap">
+ <div class="section-head"><div class="eyebrow">Certifications & professional learning</div><h2>Continuous professional development.</h2></div>
+ <div class="training">
+  <div class="card"><h3>Monitoring, Evaluation and Learning</h3><p>Kenya Education Management Institute · May–June 2026</p></div>
+  <div class="card"><h3>Microsoft Certified Educator</h3><p>Microsoft · March 2025</p></div>
+  <div class="card"><h3>Child Online Protection for Educators (Intermediate)</h3><p>International Telecommunication Union and UNDP · August 2026</p></div>
+  <div class="card"><h3>Program Evaluation</h3><p>Team4Tech · August 2026</p></div>
+  <div class="card"><h3>Introduction to Generative AI in Education</h3><p>Team4Tech · October 2026</p></div>
+  <div class="card"><h3>Key Essentials: The Sustainable Development Goals and the Law</h3><p>University of Cambridge · completed 2026</p></div>
+  <div class="card"><h3>Professional registration</h3><p>Registered and licensed teacher with TSC; registered technical trainer with TVETA in ICT and Computer Science up to Level 6.</p></div>
+ </div>
+</div></section>
+
+
+<section id="media" style="background:#eef3f6"><div class="wrap">
+ <div class="section-head"><div class="eyebrow">Featured work & professional media</div><h2>Ideas, research and learning in action.</h2><p>A selection of public professional updates and research that reflect my ongoing engagement with education, technology and professional learning.</p></div>
+ <div class="two-col">
+  <article class="card">
+   <div class="sub">Published research · 2026</div>
+   <h3>Leveraging Homomorphic Encryption to Enhance Efficiency and Data Protection in Online Retail Based in Kenya</h3>
+   <p>Research published in the <em>Journal of Research Innovation and Implications in Education</em>, Volume 10, Issue 1, pages 450–462. The paper explores Partial Homomorphic Encryption and data privacy in Kenyan online retail contexts.</p>
+   <p><a href="https://www.ajol.info/index.php/jriie/article/view/322519" target="_blank" rel="noopener">Read the published article ↗</a></p>
+  </article>
+  <article class="card">
+   <div class="sub">AI in Education · Professional learning</div>
+   <h3>EAC AI Alliance, UNESCO, IUCEA and GIZ workshop</h3>
+   <p>Reflections on exploring how emerging technologies can strengthen pedagogical methods and support smarter, more inclusive learning environments.</p>
+   <p><a href="https://www.linkedin.com/in/lucy-mukolwe-ba396511a" target="_blank" rel="noopener">View LinkedIn profile and featured update ↗</a></p>
+  </article>
+  <article class="card">
+   <div class="sub">Generative AI · Team4Tech</div>
+   <h3>Introduction to Generative AI in Education</h3>
+   <p>Professional learning focused on how Generative AI can support teaching and learning, creativity and more engaging educational experiences.</p>
+   <p><a href="https://www.linkedin.com/in/lucy-mukolwe-ba396511a" target="_blank" rel="noopener">View LinkedIn profile and update ↗</a></p>
+  </article>
+  <article class="card">
+   <div class="sub">Teacher mentorship · TSC</div>
+   <h3>Teacher Mentor recognition</h3>
+   <p>Recognised in the Teacher Mentor category during World Teachers’ Day celebrations, reflecting contributions to teacher professional development, CBE implementation and TIMEC.</p>
+   <p><a href="https://www.linkedin.com/in/lucy-mukolwe-ba396511a" target="_blank" rel="noopener">View LinkedIn profile and recognition update ↗</a></p>
+  </article>
+ </div>
+ <div style="height:18px"></div>
+ <div class="panel">
+  <div class="eyebrow">Photo & media gallery</div>
+  <h3 style="margin:8px 0">Bring your professional story to life.</h3>
+  <p style="margin:0;color:#5d6b7d">I have structured this portfolio to accommodate authentic photographs from teacher-training workshops, STEM activities, certificates, conference participation and classroom projects. LinkedIn text updates are linked above; original photos are not copied from LinkedIn. Add your preferred images and certificate scans before publishing the final public version.</p>
+ </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+ <div class="section-head"><div class="eyebrow">Connect with me</div><h2>Let's strengthen learning through technology.</h2><p>I welcome conversations about teacher development, ICT integration, STEM education, digital learning and collaborative education initiatives.</p></div>
+ <div class="contact-grid">
+  <div class="contact-note">If you are working on education programmes, teacher capacity-building, EdTech initiatives or opportunities to expand girls’ participation in STEM, I would be glad to connect.</div>
+  <div class="contact-card"><p><strong>Email</strong><br><a href="mailto:lucymukolwe@gmail.com">lucymukolwe@gmail.com</a></p><p><strong>Phone</strong><br><a href="tel:+254700914016">+254 700 914 016</a></p><p><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/lucy-mukolwe-ba396511a" target="_blank" rel="noopener">linkedin.com/in/lucy-mukolwe-ba396511a</a></p><p><strong>Location</strong><br>Kitale, Kenya</p><p><strong>Professional focus</strong><br>Education · ICT · STEM · Teacher Development</p></div>
+ </div>
+</div></section>
+</main>
+<footer><div class="wrap">© <span id="year">2026</span> Lucy Mukolwe Nyongesa · Professional Portfolio</div></footer>
+</body></html>
